@@ -7,6 +7,7 @@ function display() {
     let designation = document.getElementById("designation").value;
     let productType = document.getElementById("productType").value;
     let feedback = document.getElementById("feedbackText").value;
+    let userExperience = document.getElementById("userExperience").value;
     
     //display
     document.getElementById("userName").innerHTML= userName;
@@ -27,6 +28,8 @@ function display() {
     ("userProductChoice").innerHTML=productType;
 
     document.getElementById("userFeedback").innerHTML=feedback;
+
+    document.getElementById("exp").innerHTML= userExperience
 
     document.getElementById("userInfo").style.display = "block";
 }
