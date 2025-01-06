@@ -1,7 +1,3 @@
-
-
-
-
 function display() {
 
     let userName = document.getElementById("name").value;
@@ -38,4 +34,10 @@ function display() {
 const button = document.getElementById("submitButton");
 
 button.onclick= display;
+
+document.addEventListener('keydown', function(event) {
+    if (event.key==="Enter") {
+        display();
+    }
+})
 
